@@ -17,7 +17,7 @@ function currentLine(KatzDeliLine) {
   const numbersAndNames = []
     
   for (let i = 0, l = KatzDeliLine.length; i < l; i++) {
-      numbersAndNames.push(`${i + 1}. ${KatzDeliLine[i]}`)
+      numbersAndNames.push(`${i + 1}, ${KatzDeliLine[i]}`)
     }
   return `The line is currently: ${numbersAndNames.join(',')}`
 }
