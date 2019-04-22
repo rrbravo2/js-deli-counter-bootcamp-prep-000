@@ -19,5 +19,5 @@ function currentLine(KatzDeliLine) {
    for (let i = 0; i< KatzDeliLine.length; i++) {
    deliLine.push(i+1 + ". " + KatzDeliLine[i])
 }
-   return 'The line is currently: deliLine.join(",")'
+   return 'The line is currently: ' + deliLine.join(', ');
 }
