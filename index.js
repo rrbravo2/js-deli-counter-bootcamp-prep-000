@@ -18,7 +18,7 @@ function currentLine(KatzDeliLine) {
       numbersAndNames.push(`${i + 1}. ${KatzDeliLine[i]}`);}
     
      if (KatzDeliLine.length > 0){
-      return `The line is currently: ${numbersAndNames.join(',')}`
+      return `The line is currently: ${numbersAndNames.join(',')}`;
       } else { 
         return 'The line is currently empty.';
       }      
