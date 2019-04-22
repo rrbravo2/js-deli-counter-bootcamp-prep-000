@@ -21,6 +21,6 @@ function currentLine(KatzDeliLine) {
       return `The line is currently: ${numbersAndNames.join(',')}`
       
      } else { 
-        return 'The line is currently empty.';
+        return 
       }      
     }  
