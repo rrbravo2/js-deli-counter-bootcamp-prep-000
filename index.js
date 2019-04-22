@@ -11,13 +11,13 @@ function nowServing (KatzDeliLine) {
 }
 
 function currentLine(KatzDeliLine) {
-  if (!KatzDeliLine.length) {
+  if (KatzDeliLine.length > 0) {
     return "The line is currently empty."
   } 
   const numbersAndNames = []
     
-  for (let i = 0, l = KatzDeliLine.length; i < l; i++) {
-      numbersAndNames.push(`${i + 1}, ${KatzDeliLine[i]}`)
+  for (let i = 0; i < KatzDeliLine.length; i++) {
+      numbersAndNames.push(`${i + 1}. ${KatzDeliLine[i]}`)
     }
   return `The line is currently: ${numbersAndNames.join(',')}`
 }
