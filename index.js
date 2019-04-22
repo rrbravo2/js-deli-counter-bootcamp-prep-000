@@ -11,13 +11,15 @@ function nowServing (KatzDeliLine) {
 }
 
 function currentLine(KatzDeliLine) {
-  if (KatzDeliLine.length > 0) {
-    return 'The line is currently empty.';
-  } 
-  var numbersAndNames = []
-    
+ 
+  var numbersAndNames = [];
+  
   for (var i = 0; i < KatzDeliLine.length; i++) {
-      numbersAndNames.push(`${i + 1}. ${KatzDeliLine[i]}`)
-    }
-  return `The line is currently: ${numbersAndNames.join(',')}`
-}
+      numbersAndNames.push(`${i + 1}. ${KatzDeliLine[i]}`);}
+    
+     if (KatzDeliLine.length > 0){
+      return `The line is currently: ${numbersAndNames.join(',')}`
+      } else { 
+        return 'The line is currently empty.';
+      }      
+    }  
