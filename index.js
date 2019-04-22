@@ -19,5 +19,5 @@ function currentLine(KatzDeliLine) {
   for (let i = 0, l = KatzDeliLine.length; i < l; i++) {
       numbersAndNames.push(`${i + 1}. ${line[i]}`)
     }
-  return `The line is currently: ${numbersAndNames.join (',')}`
+  return `The line is currently: ${numbersAndNames.join(',')}`
 }
