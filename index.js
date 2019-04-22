@@ -11,7 +11,7 @@ function nowServing (KatzDeliLine) {
 }
 
 function currentLine(KatzDeliLine) {
-  if (KatzDeliLine.length === 0) {
+  if (KatzDeliLine.length) {
     return "The line is currently empty."
   } 
   const numbersAndNames = []
